@@ -2,6 +2,13 @@
 
 Slightly modified from a demo application showing how to build rest api using golang. See git history for changes.
 
+Tax rates from
+[1](https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/tax/guides/ey-2021-worldwide-vat-gst-sales-tax-guide-web-v3.pdf?download)
+
+Territories labelled using ISO_3166-2
+[2](https://en.wikipedia.org/wiki/ISO_3166-2)
+[3](https://www.iso.org/iso-3166-country-codes.html)
+
 ## Run Locally
 
 To run, from the root of the repo
