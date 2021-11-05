@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"github.com/gorilla/mux"
-	"github.com/OneTaxApi/location-taxrate-api/api/loader"
+	"github.com/OneTaxApi/location-taxrate-api/location-taxrate-api/api/loader"
 	"net/http"
 	"strconv"
 )
