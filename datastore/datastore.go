@@ -1,8 +1,8 @@
 package datastore
 
-import "github.com/OneTaxApi/location-taxrate-api/api/loader"
+import "github.com/OneTaxApi/location-taxrate-api/loader"
 
 type TaxInfo interface {
 	Initialize()
-	SearchLocation(locationIso, locationName string, taxrate float64) *[]*loader.TaxData
+	SearchLocation(LocationIso, LocationName string, taxRate float64) *[]*loader.TaxData
 }

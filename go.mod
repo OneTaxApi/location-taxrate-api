@@ -1,4 +1,4 @@
-module github.com/OneTaxApi/location-taxrate-api/api
+module github.com/OneTaxApi/location-taxrate-api
 
 go 1.12
 

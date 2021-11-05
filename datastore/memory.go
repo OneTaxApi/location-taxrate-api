@@ -4,15 +4,14 @@ import (
 	"log"
 	"os"
 	"strings"
-
-	"github.com/OneTaxApi/location-taxrate-api/api/loader"
+	"github.com/OneTaxApi/location-taxrate-api/loader"
 )
 
 type TaxRates struct {
 	Store *[]*loader.TaxData `json:"store"`
 }
 
-func (b *Rates) Initialize() {
+func (b *TaxRates) Initialize() {
 	filename := "./assets/locations.csv"
 	file, err := os.Open(filename)
 	if err != nil {
@@ -22,9 +21,9 @@ func (b *Rates) Initialize() {
 	b.Store = loader.LoadData(file)
 }
 
-func (b *Rates) SearchLocation(iso string) *loader.TaxData {
+func (b *TaxRates) SearchLocation(iso string) *loader.TaxData {
 	ret := Filter(b.Store, func(v *loader.TaxData) bool {
-		return strings.ToLower(v.LocationISO) == strings.ToLower(iso)
+		return strings.ToLower(v.LocationIso) == strings.ToLower(iso)
 	})
 	if len(*ret) > 0 {
 		return (*ret)[0]
