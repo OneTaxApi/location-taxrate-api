@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/OneTaxApi/location-taxrate-api/location-taxrate-api/api/loader"
+	"github.com/OneTaxApi/location-taxrate-api/api/loader"
 )
 
 type TaxRates struct {

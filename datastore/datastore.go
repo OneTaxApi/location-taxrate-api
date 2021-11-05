@@ -1,6 +1,6 @@
 package datastore
 
-import "github.com/OneTaxApi/location-taxrate-api/location-taxrate-api/api/loader"
+import "github.com/OneTaxApi/location-taxrate-api/api/loader"
 
 type TaxInfo interface {
 	Initialize()
