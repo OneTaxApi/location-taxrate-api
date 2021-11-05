@@ -7,9 +7,9 @@ import (
 )
 
 type TaxData struct {
-	LocationIso     string  `json:"location_iso"`
-	LocationName    string  `json:"location_name"`
-	TaxRate         string  `json:"location_taxrate"`
+	ISO     string  `json:"iso"`
+	NAME    string  `json:"name"`
+	RATE    string  `json:"rate"`
 }
 
 func LoadData(r io.Reader) *[]*TaxData {
@@ -31,9 +31,9 @@ func LoadData(r io.Reader) *[]*TaxData {
 			log.Println(err)
 		}
 		taxrate := &TaxData{
-			LocationIso:    row[0],
-			LocationName:   row[1],
-			TaxRate:        row[2],
+			ISO:    row[0],
+			NAME:   row[1],
+			RATE:   row[2],
 		}
 
 		if err != nil {

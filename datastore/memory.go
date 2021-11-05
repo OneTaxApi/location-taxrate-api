@@ -3,7 +3,6 @@ package datastore
 import (
 	"log"
 	"os"
-	"strings"
 	"github.com/OneTaxApi/location-taxrate-api/loader"
 )
 
@@ -21,9 +20,9 @@ func (b *TaxRates) Initialize() {
 	b.Store = loader.LoadData(file)
 }
 
-func (b *TaxRates) SearchLocation(iso string) *loader.TaxData {
+func (b *TaxRates) SearchLocation(location string) *loader.TaxData {
 	ret := Filter(b.Store, func(v *loader.TaxData) bool {
-		return strings.ToLower(v.LocationIso) == strings.ToLower(iso)
+		return v.ISO == location
 	})
 	if len(*ret) > 0 {
 		return (*ret)[0]

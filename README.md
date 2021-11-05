@@ -27,5 +27,10 @@ To reach any endpoint use `baseurl:8080/api/v1/{endpoint}`
 
 ```text
 Get taxrate by location
-"/taxrate/location/{location}" 
+"localhost:8080/api/v1/taxrate/location/{location}" 
+```
+
+As an example to get the tax rate for Kenya, use:
+```text
+"curl localhost:8080/api/v1/taxrate/location/KE"
 ```

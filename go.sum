@@ -1,5 +1,7 @@
 github.com/OneTaxApi/location-taxrate-api v0.0.0-20211104172517-4ff8dd9f171b h1:kBNqahcCEUjqLwlWCXqm/xB7/bUbQRRw14S0g34oc2Q=
 github.com/OneTaxApi/location-taxrate-api v0.0.0-20211105080913-6f12fd60c697 h1:a25R1p49SZKi0tXJdQTUhKgy1cLGS/k6Ix5EU7w1JpQ=
 github.com/OneTaxApi/location-taxrate-api v0.0.0-20211105083935-734a70f17e04 h1:Gp9yMPgTGWNxJebItbHAYMGh1UPNpeUpnypLy0ajKx8=
+github.com/OneTaxApi/location-taxrate-api v0.0.0-20211105092515-1c8bdc986e24 h1:a9t2Ryu7ZvR7cNZNuuCg+e3U477lZUbFVT4yEjdgHhQ=
+github.com/OneTaxApi/location-taxrate-api v0.0.0-20211105092515-1c8bdc986e24/go.mod h1:1DQoI0TKgWXiH7cxgg8v3doxE9Ct6ZJNrQj3T/2fXQg=
 github.com/gorilla/mux v1.7.3 h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=
 github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=

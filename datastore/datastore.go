@@ -4,5 +4,5 @@ import "github.com/OneTaxApi/location-taxrate-api/loader"
 
 type TaxInfo interface {
 	Initialize()
-	SearchLocation(LocationIso string) *loader.TaxData
+	SearchLocation(iso string) *loader.TaxData
 }
