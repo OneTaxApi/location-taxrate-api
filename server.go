@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	taxrate datastore.location
+	taxrates datastore.TaxInfo
 )
 
 func timeTrack(start time.Time, name string) {
@@ -20,7 +20,7 @@ func timeTrack(start time.Time, name string) {
 
 func init() {
 	defer timeTrack(time.Now(), "file load")
-	taxrates = &datastore.location{}
+	taxrates = &datastore.TaxRates{}
 	taxrates.Initialize()
 }
 
