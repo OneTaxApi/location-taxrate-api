@@ -1,13 +1,8 @@
 package datastore
 
-import "github.com/moficodes/bookdata/api/loader"
+import "github.com/OneTaxApi/location-taxrate-api/api/loader"
 
-type BookStore interface {
+type TaxInfo interface {
 	Initialize()
-	SearchAuthor(author string, ratingOver, ratingBelow float64, limit, skip int) *[]*loader.BookData
-	SearchBook(bookName string, ratingOver, ratingBelow float64, limit, skip int) *[]*loader.BookData
-	SearchISBN(isbn string) *loader.BookData
-	CreateBook(book *loader.BookData) bool
-	DeleteBook(isbn string) bool
-	UpdateBook(isbn string, book *loader.BookData) bool
+	SearchLocation(locationIso, locationName string, taxrate float64) *[]*loader.TaxData
 }

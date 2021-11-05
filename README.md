@@ -1,6 +1,6 @@
 # location-taxrate-api
 
-Slightly modified from a demo application showing how to build rest api using golang. See git history for changes.
+Modified from a [demo application](https://github.com/moficodes/bookdata-api) by [Mofizur Rahman](https://github.com/moficodes) showing how to build rest api using golang. See git history for changes.
 
 Tax rates from
 [1](https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/tax/guides/ey-2021-worldwide-vat-gst-sales-tax-guide-web-v3.pdf?download)
